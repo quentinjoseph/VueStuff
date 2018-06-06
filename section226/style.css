@@ -1,0 +1,28 @@
+body,html {
+  /* background-color: red;
+  color: white; */
+  font-family: sans-serif;
+  height: 100%;
+}
+input{
+  border-radius: 20px;
+  border: 1px solid black;
+  padding:5px;
+  outline: none;
+}
+.demo{
+  width: 100px;
+  height: 100px;
+  background: grey;
+  margin: 15px;
+}
+
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}

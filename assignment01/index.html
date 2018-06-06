@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href=style.css>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div id="app">
+  <p>{{ name }} is {{age}} years old</p>
+  <p>{{name}} used to be {{age/3}} years old a long time ago</p>
+  <img v-bind:src="link" alt="">
+  <a v-bind:href='link'>a link</a>
+  <p v-html='fullLink'></p>
+  <input type="text" v-bind:value="name">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

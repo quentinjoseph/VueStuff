@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href=style.css>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div id="app">
+  <!-- <input type="text" v-on:input="changeTitle"> -->
+  <button v-on:click="goUp(3, $event)">button</button>
+  <p>{{counter}}</p>
+  <p class="coordy" v-on:mousemove="updateCoordinates">x={{x}} y={{y}}
+    <span v-on:mousemove.stop="">Dead Zone</span>
+  </p>
+  <input v-on:keyup.enter.space="alertMe" type="text">
+  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body,html {
+  /* background-color: red;
+  color: white; */
+  font-family: sans-serif;
+  height: 100%;
+}
+input{
+  border-radius: 20px;
+  border: 1px solid black;
+  padding:5px;
+  outline: none;
+}
