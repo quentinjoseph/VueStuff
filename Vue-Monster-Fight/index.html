@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster Slayer</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <section class="game-meters">
+    <div class="you half">
+      <div class="title">
+        <h2>You</h2>
+      </div>
+      <div class="meter-container">
+        <div class="meter" :style="{width: youMeter + '%'}"><div>{{youMeter}}</div></div>
+      </div>
+    </div>
+    <div class="monster half">
+      <div class="title">
+        <h2>The Monster</h2>
+      </div>
+      <div class="meter-container">
+        <div class="meter" :style="{width: monsterMeter + '%'}">
+            <div>{{monsterMeter}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="game-controls">
+    <button @click="fightDamage" class="attack">Attack</button>
+    <button @click="specialAttack" class="special-attack">Special</button>
+    <button @click="heal"class="heal">Heal</button>
+    <button @click="giveUp" class="give-up">Give Up</button>
+  </section>
+
+  <section class="game-display">
+    <div class="happening">
+      <template v-for="(hit, index) in damageToYou">
+        <template>
+          <div class="hits you-readings">
+            <h3>You {{hit}} in health</h3>
+          </div>
+        </template>
+      </template>
+    </div>
+
+    <div class="happening">
+      <template v-for="(punch, index) in damageToMonster">
+        <template >
+          <div class="hits monster-readings">
+            <h3 >The Monster {{punch}} in health</h3>
+          </div>
+        </template>
+      </template>
+    </div>
+
+  </section>
+</div>
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
